@@ -1,0 +1,2 @@
+DROP TABLE IF EXISTS NormalThings;
+CREATE TABLE NormalThings(Index_ID INTEGER PRIMARY KEY AUTOINCREMENT, time_stamp DATETIME DEFAULT(STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW', 'LOCALTIME')), write_time DOUBLE, random_int INTEGER, blob BLOB);
