@@ -1,6 +1,8 @@
 # DBAnalytics_ver03
-Code Runs Tests on Database (DB) Appending speeds for various DB and Binary Blob Sizes. This is done versus the controlled FileOutputStream method. The results show that the control case is much faster and less heavy than the SQLite DB version. The DB version takes 0.5 s on average to load an entire DB, whereas the later takes less than 1 ms. This may be the result of wrongly coding for the FileOutputStream tests.
+This project will create a Java program that can compare two storage systems: SQLite databases and the use of Java FileOutputStreams. 
 
-To RUN: Open project on Eclipse. Run in order InitializeDB > PopulateDB > DataAnlysis > FileStream. Each process will print out a message indicating completion (ex: "Database Initialized", Database Populated").
-
-Caution: Please do not run PopulateDB twice. You must first initialize the database through InitializeDB then repopulate it through PopulatedDB. Not doing so will produce an unclean database which will obscure data analysis.
+Each of these storage systems should be able to:
+  Create a blank storage system for input data to be stored into.
+  Be able to take some input file and put it into the storage system created in the first step.
+    At the same time, it should take the write times of this process.
+  Be able to clean up data when the storage system is no longer in use.
