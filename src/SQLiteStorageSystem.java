@@ -92,12 +92,34 @@ public class SQLiteStorageSystem implements IStorageSystem {
 
     }
 
+    /**
+     * This method will store one data file as a table in the SQLDatabase file.
+     * 
+     * @param data
+     */
     @Override
     public void store(byte[] data) {
-        // TODO Auto-generated method stub
+        /**
+         * Get the write times of each row during this time.
+         */
 
+        // Make a table with the name associated with the type of data being stored (the
+        // size)
+
+        StringBuilder sb = new StringBuilder();
+
+        // TODO Need to come up with a format for table name
+        String tableName = "";
+        sb.append("DROP TABLE IF EXISTS " + tableName + ";");
+        // TODO Table headings.
+        sb.append("CREATE TABLE " + tableName + " ();");
     }
 
+    /**
+     * This method will read in the different tables to get the read time of
+     * different data files, and then delete the table. Finally, the database file
+     * itself will be deleted.
+     */
     @Override
     public void closeStorage() {
         File database = new File(databaseName + ".db");
@@ -109,6 +131,9 @@ public class SQLiteStorageSystem implements IStorageSystem {
         }
     }
 
+    /**
+     * This method will give an analysis of the read-write times of different data files.
+     */
     @Override
     public void reportAnalysis() {
         // TODO Auto-generated method stub
@@ -127,8 +152,6 @@ public class SQLiteStorageSystem implements IStorageSystem {
             System.out.println("Cannot connect to " + databaseName);
             e.printStackTrace();
         }
-
-
 
     }
 

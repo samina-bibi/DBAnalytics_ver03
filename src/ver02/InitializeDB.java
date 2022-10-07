@@ -12,7 +12,7 @@ public class InitializeDB {
         int[] blobSizes = { 100, 1000, 10000 };
         int[] dbLengths = { 100, 1000, 10000 };
         int[] blobTypes = { 0, 1 };
-        Connection conn = null;
+        //Connection conn = null;
 
         // For DB of varying amount of rows
         for (int l = 0; l < dbLengths.length; l++) {
@@ -49,7 +49,7 @@ public class InitializeDB {
                         if (Files.exists(path)) {
                             Files.delete(path);
                         }
-                        Path file = Files.createFile(path);
+                        //Path file = Files.createFile(path);
 
                         Scanner sc;
                         Connection connection = null;
