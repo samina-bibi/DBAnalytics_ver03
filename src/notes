@@ -4,21 +4,27 @@ waveform data
     whistles
         frequency limts against time
 
-        time, amplitude, channels, detector, binary blob
+        data generator class
+            What is being stored in the files
+                time, amplitude, channels, detector, binary blob
+                start time, end time (along side time stamp)
+                random float for amplitude
 
-        random float for amplitude
-
-        blobs of data - random numbers - could test just 0s later
+        blobs of data - random numbers - (could test just 0s later)
             100 bytes
             1 kilobytes
             10 kilobytes
-        date field 
+        date field - for when the recording was made - timestamp
+
+
 
         method to create database field
-
-data generator class
 
 data store abstract class
 
 generate around 10000 - 100000 data rows
+    store excatly how big the data file is
 
+inserting in SQL
+    parametised cursor
+    insert statements
