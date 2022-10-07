@@ -6,5 +6,19 @@ waveform data
 
         time, amplitude, channels, detector, binary blob
 
+        random float for amplitude
 
-        
+        blobs of data - random numbers - could test just 0s later
+            100 bytes
+            1 kilobytes
+            10 kilobytes
+        date field 
+
+        method to create database field
+
+data generator class
+
+data store abstract class
+
+generate around 10000 - 100000 data rows
+

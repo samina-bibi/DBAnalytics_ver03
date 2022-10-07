@@ -16,6 +16,10 @@ public interface IStorageSystem {
     void store(byte[] data);
 
     /**
+     * Common 
+     */
+
+    /**
      * Cleans up by deleting the huge amounts of data created earlier.
      */
     void closeStorage();
